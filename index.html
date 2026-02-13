@@ -12,7 +12,7 @@
 </head>
 
 <body class="h-screen  bg-gradient-to-br from-black via-blue-950 to-black text-white">
-    <header class="w-full  bg-blue-400 flex items-center justify-between shadow md:bg-cover text-black md:px-16 ld:px-24 ">
+    <header class="w-full fixed bg-blue-400 flex items-center justify-between shadow md:bg-cover text-black md:px-16 ld:px-24 ">
         <section class="flex justify-between gap-4  ">
             <div class="w-50 items-center justify-center px-2 py-1font-black rotate-0 rounded-lg text-xl ">
                 <img src="logo-dark.svg" alt="" class="w-64 ">
@@ -31,9 +31,9 @@
             </div>
         </section>
     </header>
-    <section class="max-w-7xl mx-auto px-6 py-20">
-       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <div class="items-center text-center py-20  ">
+    <section class="max-w-7xl mx-auto px-6 py-20 flex flex-row space-x-20 justify-center text-center">
+       <div class="flex flex-col  items-center">
+    <div class="items-center text-center  ">
         <button class="bg-black/20 items-center text-center justify-center border-2 rounded-full px- py-4 hover:bg-blue-600 w-64"><span class=" text-blue font-black text-xl">.</span> Tailwind Template for Startups</button>
     </div>
     <div>
@@ -49,10 +49,10 @@
         </div>
         </div>
         </div>
-       <div class="relative flex flex-col items-center">
-    <img class="absolute w-96 h-96  rounded z-10" src="image-2.jpg"></img>
+       <div class="relative flex flex-col items-center w-64">
+    <img class="absolute w-full  h-full  object-cover" src="image-2.jpg"></img>
 
-<img class="w-64 lg:w-75 drop-shadow-2xl mt-6" 
+<img class="absolute top-4 left-4 w-32 z-10 lg:w-75 drop-shadow-2xl " 
  src="image-1.jpg" alt="">
 </div>
 </section>
@@ -64,7 +64,7 @@
 </div> 
  <div class="grid grid-cols-3 m-4 px-2  py-4 shadow rounded gap-4 border/10 ">
     <div class="m-2  px-2 border/10">
-        <img src="image-1.jpg" alt="" class="items-center text-center justify-center rounded-full hover:bg-blue-600 h-16 w-16">
+       <i class="fa fa-bar-chart text-8xl color-blue-200 text-center" ></i>
         <h1 class="font-black text-2xl">Crafted for Startups</h1>
         <p>Lorem ipsum dolor sit amet,</p>
          <p>consectetur adipiscing elit. In convallis tortor.</p>
