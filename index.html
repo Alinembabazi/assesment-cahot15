@@ -11,25 +11,45 @@
 </head>
 
 <body class="h-screen  bg-gradient-to-br from-black via-blue-950 to-black text-white">
-    <header class="w-full fixed bg-blue-400 flex  justify-between space-x-20 ">
-        <section class="flex  justify-between gap-4 ">
-            <div class=" items-center justify-center px-2 py-1 font-black rotate-0 rounded-lg text-xl ">
-                <img src="logo-dark.svg" alt="" class="w-64 ">
-                </div>
-            </div>
-            <div class="items-center justify-between px-2 space-x-4 m-4 ">
-            <a href="#">Home</a>
-            <a href="">Features</a>
-            <a href="#">Pages</a>
-            <a href="#">Support</a>
-            </div>
-            <div class="flex items-center justify-end items-end space-x-6 px-2 py-2 ">
-                <button class="bg-blue-700 rounded-md px-4 py-2">Sigin</button>
-                <button class="bg-blue-700  px-2 py-2 rounded-lg">Signup</button>
-            </div>
-        </section>
+    <header class="w-full  fixed flex  justify-between px-8 py-4 shadow-lg bg-blue-950 top-0 left-0">
+
+  <div class="flex items-center gap-0">
+    <div class=" bg-blue-600 "></div>
+<img src="logo-dark.svg" alt="">
+  </div>
+
+      <nav class="flex items-center gap-8">
+        <a href="#" class="text-gray-400 hover:text-white">Home</a>
+        <a href="#" class="text-gray-400 hover:text-white">Features</a>
+
+        <div class="relative group">
+          <button class="text-gray-400 hover:text-white flex items-center gap-2">
+            Pages
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </button>
+        
+          <div class="absolute hidden group-hover:block top-full left-0 mt-2 bg-gray-800 rounded-lg shadow-xl py-2 min-w-40">
+            <a href="#" class="block px-4 py-2 text-gray-400 hover:text-blue-500 hover:bg-gray-700">Blog Grids</a>
+            <a href="#" class="block px-4 py-2 text-gray-400 hover:text-blue-500 hover:bg-gray-700">Blog Details</a>
+            <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">404 Error</a>
+            <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Sign In</a>
+            <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Sign Up</a>
+          </div>
+        </div>
+        
+        <a href="#" class="text-gray-400 hover:text-white">Support</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium">Sign In</button>
+        <button class="text-white hover:text-gray-300 px-4 py-2">Sign Up</button>
+        <button class="text-white text-xl hover:text-yellow-400">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
     </header>
-    <section class="max-w-7xl mx-auto px-8  py-20 flex flex-row space-x-20 ">
+
+    <section class="max-w-7xl mx-auto px-8 py-20 mt-20 flex flex-row space-x-20 ">
        <div class="flex flex-col  items-center">
     <div class="items-center text-center py-10 ">
         <button class="bg-black/20 items-center text-center justify-center border-2 rounded-full px- py-4 hover:bg-blue-600 w-64"><span class=" text-blue font-black text-xl">.</span> Tailwind Template for Startups</button>
@@ -48,9 +68,9 @@
         </div>
         </div>
        <div class="relative flex flex-col  w-64">
-    <img class="absolute w-full  h-full  object-cover" src="image-2.jpg"></img>
+    <img class="absolute w-full  h-96  object-cover" src="image-2.jpg"></img>
 
-<img class="absolute top-4 left-4 w-32 z-10 lg:w-75 drop-shadow-2xl " 
+<img class="absolute top-4 left-4 w-32 z-10 lg:w-full drop-shadow-2xl w-full h-auto border/10 ml-32 " 
  src="image-1.jpg" alt="">
 </div>
 </section>
@@ -99,10 +119,190 @@
          <p>consectetur adipiscing elit. In convallis tortor.</p>
     </div>
  </div>
-<div class=" flex items-center drop-shadow-2xl py-8 space-x-8 justify-center font-blackspace-x-8 ">
-    <a href="#" " class="underline hover:underline-offset-8">About Us </a>
-    <a href="#" class="underline hover:underline-offset-8">Our Mission </a>
-    <a href="#" class=" underline hover:underline-offset-8">Our Vision</a>
+<div class=" flex items-center drop-shadow-xl py-8 space-x-8 justify-center font-blackspace-x-8 
+pb-4 gap-12 mb-16 border-b border-gray-700 ">
+    <a href="#" " class="underline hover:underline-offset-8 font-bold">About Us </a>
+    <a href="#" class="underline hover:underline-offset-8 font-bold">Our Mission </a>
+    <a href="#" class=" underline hover:underline-offset-8 font-bold">Our Vision</a>
 </div>
+
+<!-- Team Member Section -->
+<section class="py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl font-black text-white mb-12">Meet Our Team</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Team Member 1 -->
+      <div class="flex flex-col items-center">
+        <div class="group relative">
+          <img src="image-1.jpg" alt="Olivia Andrium" class="w-64 h-80 object-cover rounded-lg mb-6 hover:opacity-75 transition cursor-pointer">
+          
+          <!-- Social Icons on Image -->
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition">
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-600">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-black">
+              <i class="fa-brands fa-x-twitter text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-700">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </button>
+          </div>
+        </div>
+        <h3 class="text-2xl font-black text-white">Olivia Andrium</h3>
+        <p class="text-gray-400">Project Manager</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="flex flex-col items-center">
+        <div class="group relative">
+          <img src="image-1.jpg" alt="Team Member" class="w-64 h-80 object-cover rounded-lg mb-6 hover:opacity-75 transition cursor-pointer">
+          
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition">
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-600">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-black">
+              <i class="fa-brands fa-x-twitter text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-700">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </button>
+          </div>
+        </div>
+        <h3 class="text-2xl font-black text-white">Team Member</h3>
+        <p class="text-gray-400">Designer</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="flex flex-col items-center">
+        <div class="group relative">
+          <img src="image-1.jpg" alt="Team Member" class="w-64 h-80 object-cover rounded-lg mb-6 hover:opacity-75 transition cursor-pointer">
+          
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition">
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-600">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-black">
+              <i class="fa-brands fa-x-twitter text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-700">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </button>
+          </div>
+        </div>
+        <h3 class="text-2xl font-black text-white">Team Member</h3>
+        <p class="text-gray-400">Developer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6 bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="grid grid-cols-2 gap-8 items-center justify-center">
+    
+      <div class="relative items-center">
+        <img src="image-1.jpg" alt="Digital Agency" class="w-64 h-auto rounded-lg shadow-lg border/10 ml-32">
+      </div>
+
+      <div>
+        <h2 class="text-xl font-black text-white mb-6 leading-tight">We are Creative Digital Agency Based in USA</h2>
+        <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum sapien ac leo cursus dignissim. In ac lectus vel orci accumsan ultricies at in libero accumsan.
+        </p>
+        <p class="text-gray-400 text-lg leading-relaxed">
+          Phasellus ex massa, facilisis ac vestibulum eget, ultrices at in libero accumsan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<div class="items-center justify-center text-center">
+
+    <h1 class="font-bold text-5xl text-gray-700 mt-2 py-0">OUR TEAM</h1>
+    <h2 class="font-bold text-2xl items-center">Meet With Our Creative Dedicated Team</h2>
+    <div class="text-gray-300 justify-center space-y-2 py-4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis</p>
+    <span>tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</span>
+</div>
+</div>
+    
+<section>
+<section class="py-20 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl font-black text-white mb-12">Meet Our Team</h2>
+    
+    <div class="grid grid-cols-3 md:grid-cols-3 gap-8">
+      <div class="flex flex-col items-center">
+        <div class="group relative">
+          <img src="prf5.jpeg" alt="Olivia Andrium" class="w-64 h-80 object-cover rounded-lg mb-6 hover:opacity-75 transition cursor-pointer">
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition">
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-600">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-black">
+              <i class="fa-brands fa-x-twitter text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-700">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </button>
+          </div>
+        </div>
+        <h3 class="text-2xl font-black text-white">Aline </h3>
+        <p class="text-gray-400">Project Manager</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="group relative">
+          <img src="prf1.jpg" alt="Olivia Andrium" class="w-64 h-80 object-cover rounded-lg mb-6 hover:opacity-75 transition cursor-pointer">
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition">
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-600">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-black">
+              <i class="fa-brands fa-x-twitter text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-700">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </button>
+          </div>
+        </div>
+        <h3 class="text-2xl font-black text-white">Uwababyeyi</h3>
+        <p class="text-gray-400">Data analytist</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="group relative">
+          <img src="profile2.jpg" alt="Olivia Andrium" class="w-64 h-80 object-cover rounded-lg mb-6 hover:opacity-75 transition cursor-pointer">
+          <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition">
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-600">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-black">
+              <i class="fa-brands fa-x-twitter text-white"></i>
+            </button>
+            <button class="w-12 h-12 rounded-full bg-gray-700/80 flex items-center justify-center hover:bg-blue-700">
+              <i class="fa-brands fa-linkedin text-white"></i>
+            </button>
+          </div>
+        </div>
+        <h3 class="text-2xl font-black text-white">Mbabazi</h3>
+        <p class="text-gray-400">Computer scientist</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+</section>
+
+
+
 </body>
 </html>
